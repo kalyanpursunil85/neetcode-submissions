@@ -1,0 +1,18 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        visited = set()
+
+        for num in nums:
+            if num in visited:
+                return True
+            else:
+                visited.add(num)
+        
+        return False
+
+
+"""
+visited = { 1 2 3 }
+
+"""
+        
